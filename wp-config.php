@@ -23,8 +23,8 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $db_user = 'root';
     $db_pass = '';
 }else{
-    $db_name = 'onlineserviceslab';
-    $db_user = 'onlineserviceslab';
+    $db_name = 'onligfbc_onlineserviceslab';
+    $db_user = 'onligfbc_onlineserviceslab';
     $db_pass = '0=&gMN8JRz,l';
 }
 // ** Database settings - You can get this info from your web host ** //
