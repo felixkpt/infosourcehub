@@ -30,13 +30,13 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'onlineserviceslab' );
+define( 'DB_NAME', $db_name );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', $db_user );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', $db_pass );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
