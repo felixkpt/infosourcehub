@@ -7,8 +7,7 @@
     <title>Felix Biwott Theme</title>
     <script type="text/javascript" src="<?= get_theme_root_uri().'/b5awesometheme/js/bootstrap.min.js' ?>"></script>
     <link rel="stylesheet" href="<?= get_theme_root_uri().'/b5awesometheme/css/bootstrap.css' ?>">
-    <link rel="stylesheet" href="<?= bloginfo('stylesheet_url') ?>">
-    <link rel="stylesheet" href="<?= site_url('stylesheet_url') ?>">
+    <link rel="stylesheet" href="<?= bloginfo('stylesheet_url') ?>?v=ervq1">
     <?=
     wp_head()
     ?>
@@ -62,8 +61,4 @@
             </div>
         </div>
     </header>
-
-    <div class="container-fluid px-1">
-        <div id="ttr_header" class="text-danger">
-            <h1><?= get_the_title() ?></h1>
-        </div>
+    <div class="container-fluid ps-2 ps-md-4">
