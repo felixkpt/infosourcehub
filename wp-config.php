@@ -17,17 +17,17 @@
  *
  * @package WordPress
  */
-
+var_dump($_SERVER['HTTP_HOST']);
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $db_name = 'onlineserviceslab';
     $db_user = 'root';
     $db_pass = '';
-}else{
+}else{echo 'ddd';
     $db_name = 'onlineserviceslab';
     $db_user = 'onlineserviceslab';
     $db_pass = '0=&gMN8JRz,l';
 }
-
+die;
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', $db_name );
