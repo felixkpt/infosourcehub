@@ -25,11 +25,10 @@
 <body>
 <main>
     <header>
-        <div class="px-1 py-2 bg-light text-white">
+        <div class="px-1 py-2 bg-light">
             <div class="container-fluid px-1">
-                <div class="">
-
                     <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Main Menu">
+                        <div class="container-fluid">
                             <a class="navbar-brand me-md-2" href="<?= site_url() ?>">
                                 <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir('2022/02')['url'].'/logo-red.png' ?>" alt="Site Logo">
                             </a>
@@ -52,9 +51,9 @@
                                     <button type="button" class="btn btn-primary">Sign-up</button>
                                 </div>
                             </div>
-                    </nav>
 
-                </div>
+                        </div>
+                    </nav>
             </div>
         </div>
         <div class="px-3 py-2 border-bottom mb-3">
