@@ -11,6 +11,15 @@
     <?=
     wp_head()
     ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54V0V7C8N5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-54V0V7C8N5');
+    </script>
 </head>
 <body>
 <main>
