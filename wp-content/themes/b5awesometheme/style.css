@@ -25,18 +25,19 @@ body
     list-style-type:none;
     margin:0;
     padding:0;
+
     /*     position: absolute; */
 }
 /*Create a horizontal list with spacing*/
 .primary-menu li {
     display:inline-block;
-    float: left;
     margin-right: 1px;
+
 }
 /*Style for menu links*/
 .primary-menu li a {
     display: block;
-    text-align: center;
+    text-align: left;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     background: #2f3036;
@@ -55,7 +56,7 @@ body
 }
 .primary-menu li:hover ul a {
     background: #f3f3f3;
-    color: gray;
+    color: #2f3036;
     height: 40px;
     line-height: 40px;
 }
