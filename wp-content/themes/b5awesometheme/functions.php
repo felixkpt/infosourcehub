@@ -16,3 +16,7 @@ function admin_bar(){
     }
 }
 add_action('init', 'admin_bar' );
+
+add_theme_support( 'post-thumbnails' );
+
+set_post_thumbnail_size( 150, 150);
