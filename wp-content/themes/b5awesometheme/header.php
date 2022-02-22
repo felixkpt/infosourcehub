@@ -7,7 +7,7 @@
     <title>Felix Biwott Theme</title>
     <script type="text/javascript" src="<?= get_theme_root_uri().'/b5awesometheme/js/bootstrap.min.js' ?>"></script>
     <link rel="stylesheet" href="<?= get_theme_root_uri().'/b5awesometheme/css/bootstrap.css' ?>">
-    <link rel="stylesheet" href="<?= bloginfo('stylesheet_url') ?>?v=ervq1">
+    <link rel="stylesheet" href="<?= bloginfo('stylesheet_url').'?v='.date('H:i:s') ?>">
     <?=
     wp_head()
     ?>

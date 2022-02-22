@@ -35,16 +35,14 @@ body
 }
 /*Style for menu links*/
 .primary-menu li a {
-    display:block;
-    min-width:140px;
-    height: 40px;
+    display: block;
     text-align: center;
-    line-height: 40px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     background: #2f3036;
-    border-radius:5px;
+    border-radius: 5px;
     text-decoration: none;
+    padding: 7px;
 }
 /*Hover state for top level links*/
 .primary-menu li:hover a {
