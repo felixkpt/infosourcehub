@@ -82,7 +82,7 @@ li.menu-item-has-children ul li a {
     line-height: 40px;
 }
 /*Hover state for dropdown links*/
-.primary-menu li.menu-item-has-children ul a:hover {
+li.menu-item-has-children ul a:hover,li.menu-item-has-children ul a:focus {
     background: #19c589;
     color: #fff;
 }
@@ -96,17 +96,22 @@ li.menu-item-has-children ul li a:last-child {
     border-bottom-right-radius:5px;
 }
 /*Display the dropdown on hover*/
-ul li a:hover + .sub-menu, .sub-menu:hover {
+ul li a:hover + .sub-menu,ul li a:focus + .sub-menu, .sub-menu:hover,.sub-menu:focus {
     position:absolute;
-    display: inline;
+    display: block;
     z-index:1000;
 }
 
 /*Responsive Styles*/
 @media screen and (max-width : 768px){
+
     li.menu-item-has-children ul{
-        width: 50%;
+        width: 60%;
+        right: 0;
+        background:white;
+        padding-right: 12px;
     }
+
     /*Create vertical spacing*/
     .primary-menu>ul>li {
         margin-bottom: 1px;
