@@ -4,7 +4,8 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
-    <title>Felix Biwott Theme</title>
+    <title><?= $title ?></title>
+    <meta name="description" content="<?= $description ?>">
     <script type="text/javascript" src="<?= get_theme_root_uri().'/b5awesometheme/js/bootstrap.min.js' ?>"></script>
     <link rel="stylesheet" href="<?= get_theme_root_uri().'/b5awesometheme/css/bootstrap.css' ?>">
     <link rel="stylesheet" href="<?= get_theme_root_uri().'/b5awesometheme/css/font-awesome/css/fontawesome-all.css' ?>">
@@ -28,7 +29,7 @@
         <div class="px-1 py-2 bg-light">
             <div class="container-fluid px-1">
                     <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Main Menu">
-                        <div class="container-fluid">
+                        <div class="container-fluid px-0 ps-md-3">
                             <a class="navbar-brand me-md-2" href="<?= site_url() ?>">
                                 <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir('2022/02')['url'].'/logo-red.png' ?>" alt="Site Logo">
                             </a>

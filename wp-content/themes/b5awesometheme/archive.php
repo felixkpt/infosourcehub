@@ -1,15 +1,19 @@
 <?php
-$title = get_bloginfo('name');
-$description = get_bloginfo('description');
+$title = 'Posts published on '.get_the_time('F jS, Y');
+$description = $title;
 require_once 'header.php';
 ?>
 <div id="ttr_header" class="text-danger">
     <h1><?= $title ?></h1>
-    <h6 class="text-primary"><?= $description ?></h6>
+    <?php
+    // Display optional category description
+    if ( category_description() ) : ?>
+        <h6 class="text-primary"><?php echo category_description(); ?></h6>
+    <?php endif; ?>
 </div>
 <div id="ttr_main" class="row">
     <div id="ttr_content" class="col-12 col-md-8 col-lg-9">
-        <div class="row">
+        <div class="">
             <?php
             // Check if there are any posts to display
             if ( have_posts() ) : ?>
@@ -23,13 +27,13 @@ require_once 'header.php';
                         <div class="row">
                             <div class="col-12 col-md-3 overflow-hidden">
                                 <div>
-                                <a href="<?php the_permalink() ?>" rel="bookmark">
-                                     <?php if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail();
-                                } else { ?>
-                                    <img style="height: 150px;width: 100%" src="<?php bloginfo('template_directory'); ?>/images/default-featured-images.jpg" alt="<?php the_title(); ?>" />
-                                <?php } ?>
-                                </a>
+                                    <a href="<?php the_permalink() ?>" rel="bookmark">
+                                        <?php if ( has_post_thumbnail() ) {
+                                            the_post_thumbnail();
+                                        } else { ?>
+                                            <img style="height: 150px;width: 100%" src="<?php bloginfo('template_directory'); ?>/images/default-featured-images.jpg" alt="<?php the_title(); ?>" />
+                                        <?php } ?>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-md-9">

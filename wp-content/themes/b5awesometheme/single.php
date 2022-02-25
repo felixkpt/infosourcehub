@@ -1,9 +1,12 @@
-<?php require_once 'header.php'; ?>
-
+<?php
+$title = get_the_title();
+$description = get_the_excerpt();
+require_once 'header.php';
+?>
 
 <div class="container-fluid px-1">
     <div id="ttr_header" class="text-danger">
-        <h1><?= get_the_title() ?>
+        <h1><?= $title ?>
         <h6 class="text-primary">Posted on <?= the_time('F jS, Y') ?></h6>
     </div>
     <div id="ttr_main" class="row">
