@@ -39,9 +39,9 @@
                 <div class="row">
                     <div class="col">
                         <ul class="list-unstyled">
-                            <li><a href="https://onlineserviceslab.com/contact-us">Contact us</a></li>
-                            <li><a href="https://onlineserviceslab.com/privacy-policy">Privacy policy</a></li>
-                            <li><a href="https://onlineserviceslab.com/terms-and-conditions">Terms & Conditions</a></li>
+                            <li><a class="text-dark" href="https://onlineserviceslab.com/contact-us"><span class="fa fa-location-arrow" aria-hidden="true"></span> Contact us</a></li>
+                            <li><a class="text-dark" href="https://onlineserviceslab.com/privacy-policy"><span class="fa fa-location-arrow" aria-hidden="true"></span> Privacy policy</a></li>
+                            <li><a class="text-dark" href="https://onlineserviceslab.com/terms-and-conditions"><span class="fa fa-location-arrow" aria-hidden="true"></span> Terms & Conditions</a></li>
                         </ul>
                     </div>
                 </div>
