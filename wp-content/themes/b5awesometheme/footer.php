@@ -52,7 +52,7 @@
                 <div class="row">
                     <div class="col">
                         <ul class="list-unstyled">
-                            <li><a href="https://facebook.com/onlineserviceslab"><span class="fa fa-facebook"></span> Facebook</a></li>
+                            <li><a href="https://facebook.com/onlineserviceslab" target="_blank"><span class="fa fa-facebook"></span> Facebook</a></li>
                         </ul>
                     </div>
                 </div>
