@@ -29,8 +29,7 @@
         <div class="px-1 py-2 bg-light">
             <div class="container-fluid px-1">
                     <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Main Menu">
-                        <div class="container-fluid px-0 ps-md-3">
-                            <a class="navbar-brand me-md-2" href="<?= site_url() ?>">
+                            <a class="navbar-brand mx-md-2" href="<?= site_url() ?>">
                                 <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir('2022/02')['url'].'/logo-red.png' ?>" alt="Site Logo">
                             </a>
                             <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,15 +51,14 @@
                                     <button type="button" class="btn btn-primary">Sign-up</button>
                                 </div>
                             </div>
-
-                        </div>
                     </nav>
             </div>
         </div>
         <div class="px-3 py-2 border-bottom mb-3">
             <div class="container d-flex flex-wrap justify-content-center">
                 <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    <script async src="https://cse.google.com/cse.js?cx=65fa5521da54517d2"></script>
+                    <div class="gcse-search"></div>
                 </form>
             </div>
         </div>

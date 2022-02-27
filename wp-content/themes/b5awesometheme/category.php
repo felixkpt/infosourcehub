@@ -14,7 +14,6 @@ require_once 'header.php';
 </div>
 <div id="ttr_main" class="row">
     <div id="ttr_content" class="col-12 col-md-8 col-lg-9">
-        <div class="">
             <?php
             // Check if there are any posts to display
             if ( have_posts() ) : ?>
@@ -52,12 +51,8 @@ require_once 'header.php';
 
                 <?php endwhile;
 
-            else: ?>
-                <p>Sorry, no posts matched your criteria.</p>
+            else: no_posts(); endif; ?>
 
-            <?php endif; ?>
-
-        </div>
     </div>
     <?= get_sidebar() ?>
 </div>

@@ -47,10 +47,7 @@ require_once 'header.php';
 
                 <?php endwhile;
 
-            else: ?>
-                <p>Sorry, no posts matched your criteria.</p>
-
-            <?php endif; ?>
+            else: no_posts(); endif; ?>
 
         </div>
     </div>

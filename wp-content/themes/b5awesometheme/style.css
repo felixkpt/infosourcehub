@@ -1,6 +1,12 @@
-
+#ttr_content{
+    /*padding: 0 16px;*/
+}
+h1, h2, h3, h4, h5, h6{
+    color:#dc3545;
+}
 #ttr_sidebar
 {
+
     border-left: 1px solid black;
 }
 #ttr_footer
@@ -64,7 +70,7 @@ li.menu-item-has-children ul li {
     display: block;
 }
 li.menu-item-has-children ul{
-    width: 30%;
+    width: 25%;
 }
 /*Prevent text wrapping*/
 li.menu-item-has-children ul li a {
@@ -88,12 +94,12 @@ li.menu-item-has-children ul a:hover,li.menu-item-has-children ul a:focus {
 }
 
 li.menu-item-has-children ul li a:first-child{
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
 }
 li.menu-item-has-children ul li a:last-child {
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
 }
 /*Display the dropdown on hover*/
 ul li a:hover + .sub-menu,ul li a:focus + .sub-menu, .sub-menu:hover,.sub-menu:focus {
@@ -105,17 +111,16 @@ ul li a:hover + .sub-menu,ul li a:focus + .sub-menu, .sub-menu:hover,.sub-menu:f
 /*Responsive Styles*/
 @media screen and (max-width : 768px){
 
-    li.menu-item-has-children ul{
-        width: 60%;
-        right: 0;
-        background:white;
-        padding-right: 12px;
-    }
-
     /*Create vertical spacing*/
     .primary-menu>ul>li {
         margin-bottom: 1px;
     }
+    li.menu-item-has-children ul{
+        width: 60%;
+        right: 0;
+        background:white;
+    }
+
     /*Make all menu links full width*/
     ul li, li a {
         width: 100%;
