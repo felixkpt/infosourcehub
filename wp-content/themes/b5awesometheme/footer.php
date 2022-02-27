@@ -38,7 +38,11 @@
                 <h5 class="text-primary">Important Links</h5>
                 <div class="row">
                     <div class="col">
-                        Content coming soon!
+                        <ul class="list-unstyled">
+                            <li><a href="https://onlineserviceslab.com/contact-us">Contact us</a></li>
+                            <li><a href="https://onlineserviceslab.com/privacy-policy">Privacy policy</a></li>
+                            <li><a href="https://onlineserviceslab.com/terms-and-conditions">Terms & Conditions</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -46,7 +50,9 @@
                 <h5 class="text-primary">Get in touch with us</h5>
                 <div class="row">
                     <div class="col">
-                        Content coming soon!
+                        <ul class="list-unstyled">
+                            <li><a href="https://facebook.com/onlineserviceslab"><span class="fa fa-facebook"></span> Facebook</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
