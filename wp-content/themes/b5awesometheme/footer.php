@@ -39,10 +39,10 @@
                 <div class="row">
                     <div class="col">
                         <ul class="list-unstyled">
-                            <li><a class="text-dark" href="https://onlineserviceslab.com/about-us"><span class="fa fa-location-arrow" aria-hidden="true"></span> About us</a></li>
-                            <li><a class="text-dark" href="https://onlineserviceslab.com/contact-us"><span class="fa fa-location-arrow" aria-hidden="true"></span> Contact us</a></li>
-                            <li><a class="text-dark" href="https://onlineserviceslab.com/privacy-policy"><span class="fa fa-location-arrow" aria-hidden="true"></span> Privacy policy</a></li>
-                            <li><a class="text-dark" href="https://onlineserviceslab.com/terms-and-conditions"><span class="fa fa-location-arrow" aria-hidden="true"></span> Terms & Conditions</a></li>
+                            <li><a class="text-dark" href="<?= site_url() ?>/about-us"><span class="fa fa-location-arrow" aria-hidden="true"></span> About us</a></li>
+                            <li><a class="text-dark" href="<?= site_url() ?>/contact-us"><span class="fa fa-location-arrow" aria-hidden="true"></span> Contact us</a></li>
+                            <li><a class="text-dark" href="<?= site_url() ?>/privacy-policy"><span class="fa fa-location-arrow" aria-hidden="true"></span> Privacy policy</a></li>
+                            <li><a class="text-dark" href="<?= site_url() ?>/terms-and-conditions"><span class="fa fa-location-arrow" aria-hidden="true"></span> Terms & Conditions</a></li>
                         </ul>
                     </div>
                 </div>
