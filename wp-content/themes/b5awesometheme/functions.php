@@ -31,7 +31,7 @@ if (!$image_url){
 
 }
 ?>
-<div class="<?php if ($counts > 1) { echo 'col-12 col-sm-6 col-md-6 col-lg-4'; }else { echo 'col-6'; } ?> p-1">
+<div class="<?php if ($counts > 1) { echo 'col-12 col-sm-6 col-md-6 col-lg-3'; }else { echo 'col-12 col-md-7 col-lg-3'; } ?> p-1">
     <div class="h-100">
         <div class="card h-100">
             <a class="link-unstyled" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
