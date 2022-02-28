@@ -40,12 +40,12 @@ if (!$image_url){
             <img style="height: 150px;width: 100%" src="<?= $image_url ?>" alt="<?php the_title(); ?>" />
             </div>
 
-            <div class="card-body">
+            <div class="card-body d-flex flex-column" style="height: 150px">
 
                 <p class="card-title">
-                <h6><?php  echo wp_trim_words(get_the_title(), 8, '...'); ?></h6>
+                <h6 class="text-decoration-underline"><?php  echo wp_trim_words(get_the_title(), 10, '...'); ?></h6>
                 </p>
-                <p class="card-text">
+                <p class="card-text mt-auto">
                     <small class="text-muted"><?php the_time('F jS, Y') ?> by <?php the_author() ?></small>
                 </p>
             </div>
