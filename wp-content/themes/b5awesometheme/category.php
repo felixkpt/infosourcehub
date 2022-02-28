@@ -100,15 +100,22 @@ if ($sub_categories) {
 
             // Check if there are any posts to display
             if ( have_posts() ) {
-           // The Loop
+                ?>
+        <div class="row">
+            <?php
+            // The Loop
                 $counts = $wp_query->post_count;
 
                 while ( have_posts() ) : 
                     the_post(); 
                     show_post_preview($counts);
                 endwhile;
+            ?>
+            </div>
+                <?php
 
-            }else{
+
+                }else{
                 no_posts(); 
             }
              
