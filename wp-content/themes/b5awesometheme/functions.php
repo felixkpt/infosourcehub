@@ -19,8 +19,52 @@ add_action('init', 'admin_bar' );
 
 add_theme_support( 'post-thumbnails' );
 
-set_post_thumbnail_size( 150, 150);
+set_post_thumbnail_size( 200, 200, true);
 
+function show_post_preview($counts = 0) {
+
+
+    $att_id = get_post_thumbnail_id( get_the_ID() );
+    $image_url = @wp_get_attachment_image_src($att_id)[0];
+if (!$image_url){
+    $image_url = get_template_directory_uri() . '/images/default-featured-images.jpg';
+
+}
+?>
+<div class="<?php if ($counts > 1) { echo 'col-12 col-sm-6 col-md-6 col-lg-4'; }else { echo 'col-6'; } ?> p-1">
+    <div class="h-100">
+        <div class="card h-100">
+            <a class="link-unstyled" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
+
+            <div class="bd-placeholder-img card-img-top" width="100%" height="200">
+            <img style="height: 150px;width: 100%" src="<?= $image_url ?>" alt="<?php the_title(); ?>" />
+            </div>
+
+            <div class="card-body">
+
+                <h5 class="card-title"><h4><?php the_title(); ?></h4>
+                </h5>
+                <p class="card-text">
+                    <?php
+                    $excerpt= get_the_excerpt();
+
+                    echo wp_trim_words($excerpt, 20, '...');
+                    ?>
+                </p>
+                <p class="card-text">
+                    <small class="text-muted"><?php the_time('F jS, Y') ?> by <?php the_author() ?></small>
+                </p>
+            </div>
+            </a>
+
+        </div>
+
+</div>
+</div>
+                <?php
+
+
+}
 function no_posts() {
 //    status_header(404);
     ?>

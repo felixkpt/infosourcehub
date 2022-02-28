@@ -1,57 +1,117 @@
 <?php
 global $wp_query;
+$term_id = $wp_query->queried_object->term_id; 
 $title = $wp_query->queried_object->name;
 $description = category_description();
 require_once 'header.php';
 ?>
-<div id="ttr_header" class="text-danger">
-  <h1>Category: <?= $title ?></h1>
+<div class="text-danger">
+  <h1><?= $title ?></h1>
     <?php
     // Display optional category description
-    if ( category_description() ) : ?>
-        <h6 class="text-primary"><?php echo category_description(); ?></h6>
+    if ( $description ) : ?>
+        <h6 class="text-primary"><?php echo $description; ?></h6>
     <?php endif; ?>
 </div>
 <div id="ttr_main" class="row">
     <div id="ttr_content" class="col-12 col-md-8 col-lg-9">
-            <?php
+                <?php 
+  
+
+$sub_categories = get_categories( array( 'parent' => $term_id, 'hide_empty' => false ) );
+
+if ($sub_categories) {
+
+      $args = array(
+        'posts_per_page'   => 5,
+        'category__in' => [ 10 ],
+        'orderby'          => 'name',
+        'order'            => 'ASC',
+        'post_type'        => 'post'
+    );
+
+    // parent posts
+    $posts = get_posts($args);
+    if ($posts){
+        ?>
+        <div class="row">
+            <?php 
+        foreach($posts as $post){
+            setup_postdata( $post );
+            
+            show_post_preview();
+        }
+        wp_reset_postdata();
+        ?>
+        </div>
+        <?php
+
+    }
+
+    foreach($sub_categories as $sub_category) {
+    $title = $sub_category->name;
+    $description = $sub_category->description;
+    $term_link = get_category_link($sub_category->term_id);
+    ?>
+    <div class="text-danger">
+      <h2><a href="<?= $term_link ?>"><?= $title ?></a></h2>
+        <?php
+        // Display optional category description
+        if ( $description ) : ?>
+            <h6 class="text-primary"><?php echo $description; ?></h6>
+        <?php endif; ?>
+    </div>
+
+    <?php 
+    $args = array(
+        'posts_per_page'   => 5,
+        'category'         => $sub_category->term_id,
+        'orderby'          => 'name',
+        'order'            => 'ASC',
+        'post_type'        => 'post'
+    );
+
+    $posts = get_posts($args);
+
+    if ($posts){
+        ?>
+        <div class="row">
+        <?php
+
+        $counts = count($posts);
+        foreach($posts as $post){
+            setup_postdata( $post );
+            
+            show_post_preview($counts);
+        }
+        wp_reset_postdata();
+        ?>
+        </div>
+        <?php
+    }else{
+        no_posts();
+    }
+
+    }
+    // endforeach;
+
+}else {
+
             // Check if there are any posts to display
-            if ( have_posts() ) : ?>
-                <?php
-// The Loop
-                while ( have_posts() ) : the_post(); ?>
-                    <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                    <small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
+            if ( have_posts() ) {
+           // The Loop
+                while ( have_posts() ) : 
+                    the_post(); 
+                    show_post_preview();
+                endwhile;
 
-                    <div class="entry">
-                        <div class="row">
-                            <div class="col-12 col-md-3 overflow-hidden">
-                                <div>
-                                    <a href="<?php the_permalink() ?>" rel="bookmark">
-                                        <?php if ( has_post_thumbnail() ) {
-                                            the_post_thumbnail();
-                                        } else { ?>
-                                            <img style="height: 150px;width: 100%" src="<?php bloginfo('template_directory'); ?>/images/default-featured-images.jpg" alt="<?php the_title(); ?>" />
-                                        <?php } ?>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <?php
-                                $excerpt= get_the_excerpt();
+            }else{
+                no_posts(); 
+            }
+             
 
-                                echo wp_trim_words($excerpt, 70, '...');
-                                ?>
-                            </div>
-                        </div>
-                        <p class="postmetadata"><?php
-                            comments_popup_link( 'No comments yet', '1 comment', '% comments', 'comments-link', 'Comments closed');
-                            ?></p>
-                    </div>
-
-                <?php endwhile;
-
-            else: no_posts(); endif; ?>
+        } 
+             ?>
 
     </div>
     <?= get_sidebar() ?>
