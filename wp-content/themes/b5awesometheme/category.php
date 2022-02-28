@@ -35,11 +35,12 @@ if ($sub_categories) {
     if ($posts){
         ?>
         <div class="row">
-            <?php 
-        foreach($posts as $post){
+            <?php
+            $counts = count($posts);
+            foreach($posts as $post){
             setup_postdata( $post );
             
-            show_post_preview();
+            show_post_preview($counts);
         }
         wp_reset_postdata();
         ?>
@@ -100,9 +101,11 @@ if ($sub_categories) {
             // Check if there are any posts to display
             if ( have_posts() ) {
            // The Loop
+                $counts = $wp_query->post_count;
+
                 while ( have_posts() ) : 
                     the_post(); 
-                    show_post_preview();
+                    show_post_preview($counts);
                 endwhile;
 
             }else{
