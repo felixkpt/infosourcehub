@@ -42,15 +42,8 @@ if (!$image_url){
 
             <div class="card-body">
 
-                <h5 class="card-title"><h4><?php the_title(); ?></h4>
-                </h5>
-                <p class="card-text">
-                    <?php
-                    $excerpt= get_the_excerpt();
-
-                    echo wp_trim_words($excerpt, 20, '...');
-                    ?>
-                </p>
+                <h6 class="card-title"><h4><?php the_title(); ?></h4>
+                </h6>
                 <p class="card-text">
                     <small class="text-muted"><?php the_time('F jS, Y') ?> by <?php the_author() ?></small>
                 </p>
