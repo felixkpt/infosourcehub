@@ -42,7 +42,8 @@ if (!$image_url){
 
             <div class="card-body">
 
-                <p class="card-title"><h4><?php  echo wp_trim_words(get_the_title(), 8, '...'); ?></h4>
+                <p class="card-title">
+                <h6><?php  echo wp_trim_words(get_the_title(), 8, '...'); ?></h6>
                 </p>
                 <p class="card-text">
                     <small class="text-muted"><?php the_time('F jS, Y') ?> by <?php the_author() ?></small>
