@@ -40,7 +40,7 @@ if (!$image_url){
             <img style="height: 150px;width: 100%" src="<?= $image_url ?>" alt="<?php the_title(); ?>" />
             </div>
 
-            <div class="card-body d-flex flex-column" style="height: 150px">
+            <div class="card-body d-flex flex-column" style="height: 170px">
 
                 <p class="card-title">
                 <h6 class="text-decoration-underline"><?php  echo wp_trim_words(get_the_title(), 10, '...'); ?></h6>
