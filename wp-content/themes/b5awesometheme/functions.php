@@ -36,8 +36,8 @@ if (!$image_url){
         <div class="card h-100">
             <a class="link-unstyled" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
 
-            <div class="bd-placeholder-img card-img-top" width="100%" height="200">
-            <img style="height: 150px;width: 100%" src="<?= $image_url ?>" alt="<?php the_title(); ?>" />
+            <div class="bd-placeholder-img card-img-top">
+            <img style="height: 200px;width: 100%" src="<?= $image_url ?>" alt="<?php the_title(); ?>" />
             </div>
 
             <div class="card-body d-flex flex-column" style="height: 170px">
