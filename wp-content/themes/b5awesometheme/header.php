@@ -32,7 +32,7 @@
             <div class="container-fluid px-1">
                     <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Main Menu">
                             <a class="navbar-brand mx-md-2" href="<?= site_url() ?>">
-                                <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir('2022/02')['url'].'/logo-red.png' ?>" alt="Site Logo">
+                                <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir()['baseurl'].'/2022/02/logo-red.png' ?>" alt="Site Logo">
                             </a>
                             <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
