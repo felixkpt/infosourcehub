@@ -19,7 +19,7 @@ add_action('init', 'admin_bar' );
 
 add_theme_support( 'post-thumbnails' );
 
-set_post_thumbnail_size( 200, 200, true);
+set_post_thumbnail_size( 400, 250, true);
 
 function show_post_preview($counts) {
 
