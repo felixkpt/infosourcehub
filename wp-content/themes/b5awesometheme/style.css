@@ -49,19 +49,26 @@ h3 a, h4 a, h5 a, h6 a{
     display:inline-block;
 
 }
-/*Style for menu links*/
+/*Style for top level links*/
 .primary-menu>ul>li>a {
+    
     display: block;
-    text-align: left;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    background: #2f3036;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 7px;
+    position: relative;
+    padding: 10px 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+		color: #333;
+		text-decoration: none;
+		border-bottom: solid 2px;
+
+}
+.primary-menu>ul>li>a:hover {
+    color: #35dc8d;
+		border-bottom: solid 2px #35dc8d;
 }
 /*Style for sub menu links*/
-li.menu-item-has-children a {
+ul.sub-menu>li a {
     display: block;
     text-align: left;
     color: #fff;
@@ -69,11 +76,7 @@ li.menu-item-has-children a {
     text-decoration: none;
     padding: 5px;
 }
-/*Hover state for top level links*/
-.primary-menu li:hover a {
-    background: #cf2e2e;
-    color: #fff;
-}
+
 
 /*Hide dropdown links until they are needed*/
 li.menu-item-has-children ul {
@@ -143,3 +146,31 @@ ul li a:hover + .sub-menu,ul li a:focus + .sub-menu, .sub-menu:hover,.sub-menu:f
 }
 
 /*End Nav css*/
+
+/* Sidebar css */
+#ttr_sidebar h3 {
+	background:;
+}
+#ttr_sidebar ul{
+	list-style: none;
+	padding-left: 0;
+}
+#ttr_sidebar li a {
+	text-decoration: none;
+	color:#333;
+	
+}
+
+#ttr_sidebar li a:hover{
+	color:#fff;
+}
+#ttr_sidebar li {
+		padding: 2px 10px;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    background: #d1d6da;
+
+}
+#ttr_sidebar li:hover{
+	background: #2d87e4;
+}

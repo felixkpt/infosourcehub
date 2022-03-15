@@ -21,7 +21,7 @@
 if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $db_name = 'onlineserviceslab';
     $db_user = 'root';
-    $db_pass = '';
+    $db_pass = 'derick';
 }else{
     $db_name = 'onligfbc_onlineserviceslab';
     $db_user = 'onligfbc_onlineserviceslab';

@@ -26,43 +26,45 @@
 
 </head>
 <body>
+    <?php
+    if (current_user_can( 'manage_options' )):
+    ?>
+        <style>
+        .sticky-top {
+            top: 18px;
+        }
+        @media screen and (max-width: 782px) {
+            .sticky-top {
+            top: 32px;
+        }
+        @media screen and (max-width: 600px) {
+            .sticky-top {
+            top: 0;
+        }  
+        }
+    </style>
+    <?php 
+    endif;
+    ?>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" aria-label="Main Menu">
+    <a class="navbar-brand mx-md-2" href="<?= site_url() ?>">
+        <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir()['baseurl'].'/2022/02/logo-red.png' ?>" alt="Site Logo">
+    </a>
+    <button class="navbar-toggler justify-content-end me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse mt-1 mt-md-0" id="navbarMainMenu">
+        <?PHP
+        wp_nav_menu(
+            array(
+                'theme_location' => 'header-menu',
+                'container_class' => 'primary-menu ms-auto'
+            )
+        );
+        ?>
+    </div>
+</nav>
+
 <main>
-    <header>
-        <div class="px-1 py-2 bg-light">
-            <div class="container-fluid px-1">
-                    <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Main Menu">
-                            <a class="navbar-brand mx-md-2" href="<?= site_url() ?>">
-                                <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir()['baseurl'].'/2022/02/logo-red.png' ?>" alt="Site Logo">
-                            </a>
-                            <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse mt-1 mt-md-0" id="navbarMainMenu">
-                                <?PHP
-                                wp_nav_menu(
-                                    array(
-                                        'theme_location' => 'header-menu',
-                                        'container_class' => 'primary-menu me-auto'
-                                    )
-                                );
-                                ?>
-
-                                <div class="text-end mt-1 mt-md-0">
-                                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                                    <button type="button" class="btn btn-primary">Sign-up</button>
-                                </div>
-                            </div>
-                    </nav>
-            </div>
-        </div>
-        <div class="px-3 py-2 border-bottom mb-3">
-            <div class="container d-flex flex-wrap justify-content-center">
-                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-                    <script async src="https://cse.google.com/cse.js?cx=65fa5521da54517d2"></script>
-                    <div class="gcse-search"></div>
-                </form>
-            </div>
-        </div>
-    </header>
     <div class="container-fluid ps-2 ps-md-4">
