@@ -172,3 +172,7 @@ ul li a:hover + .sub-menu,ul li a:focus + .sub-menu, .sub-menu:hover,.sub-menu:f
 #ttr_sidebar li:hover{
 	background: #2d87e4;
 }
+.size-post-thumbnail {
+width: 100%;
+height: 220px;
+}

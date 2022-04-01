@@ -47,7 +47,7 @@
     endif;
     ?>
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" aria-label="Main Menu">
-    <a class="navbar-brand mx-md-2" href="<?= site_url() ?>">
+    <a class="navbar-brand mx-1 mx-md-2" href="<?= site_url() ?>">
         <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir()['baseurl'].'/2022/02/logo-red.png' ?>" alt="Site Logo">
     </a>
     <button class="navbar-toggler justify-content-end me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
