@@ -1,14 +1,14 @@
 </div>
 </div>
 <!--End main .container-->
-<footer id="ttr_footer" class="bg-light my-2">
+<footer id="ttr_footer" class="my-2">
     <div class="container-fluid px-2">
         <div class="row">
             <div class="col-12">
-                <h4 class="text-danger">Huduma Kenya OnlineServices</h4>
+                <h4 class="text-decoration-none section-headline" style=""><span class="section-headline-text">Huduma Kenya OnlineServices</span></h4>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <h5 class="text-primary">Recent Posts</h5>
+                <h5 class="text-success">Recent Posts</h5>
                 <div class="row">
                     <div class="col">
                         <ul class="list-unstyled">
@@ -21,10 +21,9 @@
                             // Display the Post Title with Hyperlink
                                 ?>
                                 <li>
-                                    <a class="text-dark text-decoration-none" href="<?php the_permalink() ?>">
+                                    <a class="text-white-50 text-decoration-none" href="<?php the_permalink() ?>">
                                     <div class="overflow-hidden"  style="text-overflow:ellipsis">
                                         <span class="text-nowrap">
-                                            <span class="fa fa-arrow-right" aria-hidden="true"></span>
                                             <?php  echo wp_trim_words(get_the_title(), 20, '...'); ?>
                                         </span>
                                     </div>    
@@ -40,24 +39,24 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <h5 class="text-primary">Important Links</h5>
+                <h5 class="text-success">Important Links</h5>
                 <div class="row">
                     <div class="col">
                         <ul class="list-unstyled">
-                            <li><a class="text-dark text-decoration-none" href="<?= site_url() ?>/about-us"><span class="fa fa-arrow-right" aria-hidden="true"></span> About us</a></li>
-                            <li><a class="text-dark text-decoration-none" href="<?= site_url() ?>/contact-us"><span class="fa fa-arrow-right" aria-hidden="true"></span> Contact us</a></li>
-                            <li><a class="text-dark text-decoration-none" href="<?= site_url() ?>/privacy-policy"><span class="fa fa-arrow-right" aria-hidden="true"></span> Privacy policy</a></li>
-                            <li><a class="text-dark text-decoration-none" href="<?= site_url() ?>/terms-and-conditions"><span class="fa fa-arrow-right" aria-hidden="true"></span> Terms & Conditions</a></li>
+                            <li><a class="text-white-50 text-decoration-none" href="<?= site_url() ?>/about-us">About us</a></li>
+                            <li><a class="text-white-50 text-decoration-none" href="<?= site_url() ?>/contact-us">Contact us</a></li>
+                            <li><a class="text-white-50 text-decoration-none" href="<?= site_url() ?>/privacy-policy">Privacy policy</a></li>
+                            <li><a class="text-white-50 text-decoration-none" href="<?= site_url() ?>/terms-and-conditions">Terms & Conditions</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-                <h5 class="text-primary">Get in touch with us</h5>
+                <h5 class="text-success">Get in touch with us</h5>
                 <div class="row">
                     <div class="col">
                         <ul class="list-unstyled">
-                            <li><a class="text-dark text-decoration-none" href="https://facebook.com/onlineserviceslab" target="_blank"><span class="fab fa-facebook-f"></span> Facebook</a></li>
+                            <li><a class="text-white-50 text-decoration-none" href="https://facebook.com/onlineserviceslab" target="_blank"><span class="fab fa-facebook-f"></span> Facebook</a></li>
                         </ul>
                     </div>
                 </div>
