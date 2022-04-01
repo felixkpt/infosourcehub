@@ -9,7 +9,7 @@
                <div class="px-1" style="position:absolute;bottom:0;width:100%">
                         <div class="card-title">
                             <h6 class="text-decoration-underline">
-                                <a class="text-decoration-none h-100 d-block" style="font-size:90%" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
+                                <a class="text-decoration-none h-100 d-block text-dark" style="font-size:90%" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
                                     <?php  echo wp_trim_words(get_the_title(), 15, '...'); ?>
                                 </a>          
                             </h6>
