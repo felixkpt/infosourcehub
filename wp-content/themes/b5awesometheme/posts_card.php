@@ -15,7 +15,7 @@
                             </h6>
                             <div class="card-text">
                                 <small class="text-muted"><?php the_time('F jS, Y') ?></small>
-                                    <a class="d-block text-primary text-decoration-none" style="font-size:13px" title="View posts by <?php the_author() ?>" href="<?php echo get_author_posts_url(1) ?>">
+                                    <a class="d-block text-primary text-decoration-none" style="font-size:13px" title="View posts by <?php the_author() ?>" href="<?php echo get_author_posts_url(get_the_author_ID()) ?>">
                                         <div class="d-inline">
                                             <img class="rounded-circle bg-light p-1" style="width:30px!important;height:30px!important" src="<?php echo get_template_directory_uri() . '/images/users/default.png'; ?>" alt="">
                                             <small><?php the_author() ?></small>
