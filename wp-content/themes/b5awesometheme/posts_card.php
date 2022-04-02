@@ -3,7 +3,7 @@
 
 <div class="col">
     <div class="card p-0 h-100 border border-1">
-    <div class="reponsive-card-img bd-placeholder-img card-img-top overflow-hidden">
+    <div class="responsive-card-img bd-placeholder-img card-img-top overflow-hidden">
                 <a class="text-decoration-none h-100 d-block" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
                     <img class="h-100 w-100" src="<?php echo $image_url ?>" />
                 </a>
