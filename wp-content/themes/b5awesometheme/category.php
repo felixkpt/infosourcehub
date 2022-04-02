@@ -35,7 +35,7 @@ if ($sub_categories) {
     $posts = get_posts($args);
     if ($posts){
         ?>
-        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1 h-100">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1">
             <?php
             $counts = count($posts);
             foreach($posts as $post){
@@ -77,7 +77,7 @@ if ($sub_categories) {
 
     if ($posts){
         ?>
-        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1 h-100">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1">
         <?php
 
         $counts = count($posts);
@@ -102,7 +102,7 @@ if ($sub_categories) {
             // Check if there are any posts to display
             if ( have_posts() ) {
                 ?>
-        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1 h-100">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1">
             <?php
             // The Loop
                 $counts = $wp_query->post_count;
