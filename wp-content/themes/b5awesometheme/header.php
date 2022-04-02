@@ -11,16 +11,18 @@
     <link rel="stylesheet" href="<?php echo get_theme_root_uri().'/b5awesometheme/css/font-awesome/css/fontawesome-all.css' ?>">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_url').'?v='.date('H:i:s') ?>">
     <?php  echo wp_head(); ?>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221500902-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <?php if ($_SERVER['HTTP_HOST'] != 'localhost') :?>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221500902-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'UA-221500902-1');
-    </script>
-    <script data-ad-client="ca-pub-8286276782155723" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            gtag('config', 'UA-221500902-1');
+        </script>
+        <script data-ad-client="ca-pub-8286276782155723" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <?php endif; ?>
     <?php
     if (current_user_can( 'manage_options' )):
     ?>
