@@ -1,5 +1,5 @@
 <?php
-$title = 'Posts published on '.get_the_time('F jS, Y');
+$title = 'Posts published '.single_month_title(' ', false);
 $description = $title;
 require_once 'header.php';
 ?>
