@@ -12,7 +12,7 @@
             <div class="card-title">
                 <h6>
                     <a class="h-100 d-block text-dark px-1 link-highlight" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
-                       <?php  echo wp_trim_words(get_the_title().' '.get_the_title(), 20, '...'); ?>
+                       <?php  echo wp_trim_words(get_the_title(), 20, '...'); ?>
                     </a>          
                 </h6>
                 

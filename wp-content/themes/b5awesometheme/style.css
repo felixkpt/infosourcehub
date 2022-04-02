@@ -240,3 +240,8 @@ height: 220px;
 .responsive-card-img {
     height: 150px;width: 100%;
 }
+@media (max-width: 574px) {
+    .responsive-card-img {
+        height: 220px;
+    }
+}
