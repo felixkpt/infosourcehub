@@ -4,7 +4,7 @@ $description = $title;
 require_once 'header.php';
 ?>
 
-<div id="ttr_header" class="text-danger">
+<div id="ttr_header" class="row text-danger">
     <div class="ps-2">
         <h2><?= $title ?></h2>
         <?php

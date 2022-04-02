@@ -3,9 +3,7 @@ $title = get_the_title();
 $description = get_the_excerpt();
 require_once 'header.php';
 ?>
-
-<div class="container-fluid px-1">
-    <div id="ttr_header" class="text-danger">
+    <div id="ttr_header" class="row text-danger">
         <div class="ps-2">
             <h2><?= $title ?></h2>
             <h5 class="text-success font-weight-bold">Posted on <?php echo the_time('F jS, Y') ?></h5>
