@@ -60,7 +60,7 @@ if ($sub_categories) {
         <?php
         // Display optional category description
         if ( $description ) : ?>
-            <h6 class="text-primary"><?php echo $description; ?></h6>
+            <h5 class="text-success font-weight-bold"><?php echo $description; ?></h5>
         <?php endif; ?>
     </div>
 
