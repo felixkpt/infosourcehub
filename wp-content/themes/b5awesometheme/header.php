@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?php echo get_theme_root_uri().'/b5awesometheme/css/font-awesome/css/fontawesome-all.css' ?>">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_url').'?v='.date('H:i:s') ?>">
     <?php  echo wp_head(); ?>
-    <?php if ($_SERVER['HTTP_HOST'] != 'localhost') :?>
+    <?php if ($_SERVER['HTTP_HOST'] != 'localhost' && !current_user_can( 'manage_options' )) :?>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221500902-1"></script>
         <script>
