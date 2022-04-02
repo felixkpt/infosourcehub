@@ -1,5 +1,5 @@
 
-<?php $i=0; while($i<2) { $i++; ?>
+<?php $i=0; while($i<1) { $i++; ?>
 
 <div class="col">
     <div class="card p-0 h-100 border border-1">
