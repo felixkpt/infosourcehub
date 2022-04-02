@@ -1,9 +1,9 @@
 
-<?php $i=0; while($i<10) { $i++; ?>
+<?php $i=0; while($i<1) { $i++; ?>
 
 <div class="col">
     <div class="card p-0 h-100 border border-1">
-    <div style="height: 130px;width: 100%" class="bd-placeholder-img card-img-top overflow-hidden">
+    <div class="reponsive-card-img bd-placeholder-img card-img-top overflow-hidden">
                 <a class="text-decoration-none h-100 d-block" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
                     <img class="h-100 w-100" src="<?php echo $image_url ?>" />
                 </a>
