@@ -125,7 +125,7 @@ if ($sub_categories) {
              ?>
 
     </div>
-    <?= get_sidebar() ?>
+    <?php echo get_sidebar(); ?>
 </div>
 
-<?= get_footer() ?>
+<?php echo get_footer(); ?>

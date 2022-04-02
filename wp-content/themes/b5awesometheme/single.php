@@ -24,7 +24,7 @@ require_once 'header.php';
                             <?= the_content() ?>
                         </p>
     </div>
-    <?= get_sidebar() ?>
+    <?php echo get_sidebar(); ?>
 </div>
 
-<?= get_footer() ?>
+<?php echo get_footer(); ?>

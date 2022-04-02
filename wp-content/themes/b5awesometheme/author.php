@@ -29,7 +29,7 @@ require_once 'header.php';
                 else: no_posts(); endif; ?>
         </div>
     </div>
-    <?= get_sidebar() ?>
+    <?php echo get_sidebar(); ?>
 </div>
 
-<?= get_footer() ?>
+<?php echo get_footer(); ?>

@@ -4,13 +4,13 @@
             }
             @media screen (max-width: 782px) {
                 .sticky-top {
-                top: 32px;
+                    top: 32px;
+                }
             }
-        }
             @media screen (max-width: 600px) {
                 .sticky-top {
-                top: 0;
-            }  
+                    top: 0;
+                }  
             }
 
 </style>

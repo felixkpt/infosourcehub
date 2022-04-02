@@ -1,18 +1,18 @@
 
-<?php $i=0; while($i<1) { $i++; ?>
+<?php $i=0; while($i<10) { $i++; ?>
 
 <div class="col">
     <div class="card p-0 h-100 border border-1">
-    <div style="height: 170px;width: 100%" class="bd-placeholder-img card-img-top overflow-hidden">
+    <div style="height: 130px;width: 100%" class="bd-placeholder-img card-img-top overflow-hidden">
                 <a class="text-decoration-none h-100 d-block" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
                     <img class="h-100 w-100" src="<?php echo $image_url ?>" />
                 </a>
             </div>
 
             <div class="card-title">
-                <h6 class="text-decoration-underline">
-                    <a class="text-decoration-none h-100 d-block text-dark px-1" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
-                        <?php  echo wp_trim_words(get_the_title(), 20, '...'); ?>
+                <h6>
+                    <a class="h-100 d-block text-dark px-1 link-highlight" href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>">
+                       <?php  echo wp_trim_words(get_the_title().' '.get_the_title(), 20, '...'); ?>
                     </a>          
                 </h6>
                 

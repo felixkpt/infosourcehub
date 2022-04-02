@@ -13,7 +13,7 @@ require_once 'header.php';
     <div id="ttr_content" class="col-12 col-lg-9 px-0 pe-lg-1">
           <?= no_posts() ?>
     </div>
-    <?= get_sidebar() ?>
+    <?php echo get_sidebar(); ?>
 </div>
 
-<?= get_footer() ?>
+<?php echo get_footer(); ?>
