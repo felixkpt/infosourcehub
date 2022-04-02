@@ -63,7 +63,7 @@ border-left: 1px solid #198754;
 @media (max-width:574px) {
     #ttr_footer .section-headline-text {
         padding: 0 0 0 12px;
-        font-size: 75%;
+        font-size: 80%;
         text-decoration: underline;
         text-underline-offset: 5px;
     }
