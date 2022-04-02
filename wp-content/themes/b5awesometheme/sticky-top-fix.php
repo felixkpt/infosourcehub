@@ -1,5 +1,4 @@
 <style>
-            <style>
             .sticky-top {
                 top: 18px;
             }
