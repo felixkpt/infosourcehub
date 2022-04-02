@@ -1,5 +1,5 @@
 #ttr_content{
-    /*padding: 0 16px;*/
+    padding: 0 1px;
 }
 h1, h2{
     color:#dc3545;
@@ -20,8 +20,7 @@ h3 a, h4 a, h5 a, h6 a{
 }
 #ttr_sidebar
 {
-
-    border-left: 1px solid black;
+border-left: 1px solid #198754;
 }
 #ttr_footer
 {
@@ -29,6 +28,7 @@ h3 a, h4 a, h5 a, h6 a{
     border-top: 1px #a2a2a2 solid;
     text-align: left;
     background: #333;
+    min-height: 300px;
 }
 
 #ttr_footer .section-headline {
@@ -54,7 +54,7 @@ h3 a, h4 a, h5 a, h6 a{
     box-sizing: border-box;
     background-color: #333;
     color: inherit;
-    padding: 0 30px;
+    padding: 0 22px;
     white-space: nowrap;
 }
 
@@ -120,7 +120,7 @@ li.menu-item-has-children ul{
 }
 /*Prevent text wrapping*/
 li.menu-item-has-children ul li a {
-    text-wrap: none;
+    white-space: nowrap;
     border-radius:0;
 }
 /*Style for dropdown links*/
@@ -176,6 +176,13 @@ ul li a:hover + .sub-menu,ul li a:focus + .sub-menu, .sub-menu:hover,.sub-menu:f
 
 /*End Nav css*/
 
+/* Heading */
+#ttr_header {
+    min-height: 47px;
+    margin-bottom: 6px;
+    color: white;
+    box-shadow: inset .2rem 0 0 0 #198754;
+}
 /* Sidebar css */
 #ttr_sidebar ul{
 	list-style: none;
@@ -199,7 +206,7 @@ ul li a:hover + .sub-menu,ul li a:focus + .sub-menu, .sub-menu:hover,.sub-menu:f
 
 }
 #ttr_sidebar li:hover{
-	background: #2d87e4;
+	background: #198754;
 }
 .size-post-thumbnail {
 width: 100%;

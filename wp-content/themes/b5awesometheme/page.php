@@ -6,11 +6,13 @@ require_once 'header.php';
 
 <div class="container-fluid px-1">
     <div id="ttr_header" class="text-danger">
-        <h1><?= $title ?>
-            <h6 class="text-primary">Posted on <?= the_time('F jS, Y') ?></h6>
+        <div class="ps-2">
+            <h2><?= $title ?></h2>
+            <h5 class="text-success font-weight-bold">Posted on <?php echo the_time('F jS, Y') ?></h5>
+        </div>
     </div>
     <div id="ttr_main" class="row">
-        <div id="ttr_content" class="col-12 col-md-8 col-lg-9">
+        <div id="ttr_content" class="col-12 col-lg-9 px-0 pe-lg-1">
             <p>
                 <?= the_content() ?>
             </p>

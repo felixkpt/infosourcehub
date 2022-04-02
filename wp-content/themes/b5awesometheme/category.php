@@ -5,18 +5,19 @@ $title = $wp_query->queried_object->name;
 $description = category_description();
 require_once 'header.php';
 ?>
-<div class="text-danger">
-  <h1><?= $title ?></h1>
-    <?php
-    // Display optional category description
-    if ( $description ) : ?>
-        <h6 class="text-primary"><?php echo $description; ?></h6>
-    <?php endif; ?>
+<div id="ttr_header" class="text-danger">
+    <div class="ps-2">
+        <h2><?= $title ?></h2>
+        <?php
+        // Display optional category description
+        if ( $description ) : ?>
+            <h5 class="text-success font-weight-bold"><?php echo $description; ?></h5>
+        <?php endif; ?>
+    </div>
 </div>
 <div id="ttr_main" class="row">
-    <div id="ttr_content" class="col-12 col-md-8 col-lg-9">
+    <div id="ttr_content" class="col-12 col-lg-9 px-0 pe-lg-1">
                 <?php 
-  
 
 $sub_categories = get_categories( array( 'parent' => $term_id, 'hide_empty' => false ) );
 
@@ -34,7 +35,7 @@ if ($sub_categories) {
     $posts = get_posts($args);
     if ($posts){
         ?>
-        <div class="row">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1 h-100">
             <?php
             $counts = count($posts);
             foreach($posts as $post){
@@ -76,7 +77,7 @@ if ($sub_categories) {
 
     if ($posts){
         ?>
-        <div class="row">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1 h-100">
         <?php
 
         $counts = count($posts);
@@ -101,7 +102,7 @@ if ($sub_categories) {
             // Check if there are any posts to display
             if ( have_posts() ) {
                 ?>
-        <div class="row">
+        <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-1 h-100">
             <?php
             // The Loop
                 $counts = $wp_query->post_count;

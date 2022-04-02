@@ -23,29 +23,29 @@
         gtag('config', 'UA-221500902-1');
     </script>
     <script data-ad-client="ca-pub-8286276782155723" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-</head>
-<body>
     <?php
     if (current_user_can( 'manage_options' )):
     ?>
         <style>
-        .sticky-top {
-            top: 18px;
-        }
-        @media screen and (max-width: 782px) {
             .sticky-top {
-            top: 32px;
-        }
-        @media screen and (max-width: 600px) {
-            .sticky-top {
-            top: 0;
-        }  
-        }
-    </style>
+                top: 18px;
+            }
+            @media screen (max-width: 782px) {
+                .sticky-top {
+                top: 32px;
+                }
+            }
+            @media screen (max-width: 600px) {
+                .sticky-top {
+                top: 0;
+                }  
+            }
+        </style>
     <?php 
     endif;
     ?>
+</head>
+<body>
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" aria-label="Main Menu">
     <a class="navbar-brand mx-1 mx-md-2" href="<?= site_url() ?>">
         <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?= wp_get_upload_dir()['baseurl'].'/2022/02/logo-red.png' ?>" alt="Site Logo">
@@ -67,4 +67,4 @@
 </nav>
 
 <main>
-    <div class="container-fluid ps-2 ps-md-4">
+    <div class="container-fluid px-3">
