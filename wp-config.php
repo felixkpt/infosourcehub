@@ -23,9 +23,9 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $db_user = 'root';
     $db_pass = '';
 }else{
-    $db_name = 'onligfbc_onlineserviceslab';
-    $db_user = 'onligfbc_onlineserviceslab';
-    $db_pass = '0=&gMN8JRz,l';
+    $db_name = 'legavkzw_onlineserviceslab';
+    $db_user = 'legavkzw_onlineserviceslab_user';
+    $db_pass = '@)~[kc*ohJN(';
 }
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
