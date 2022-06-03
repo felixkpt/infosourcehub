@@ -26,6 +26,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $db_name = 'legavkzw_onlineserviceslab';
     $db_user = 'legavkzw_onlineserviceslab_user';
     $db_pass = '@)~[kc*ohJN(';
+    //updates
 }
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
