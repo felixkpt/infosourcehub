@@ -21,7 +21,7 @@ add_theme_support( 'post-thumbnails' );
 
 // set_post_thumbnail_size( 200, 200, true);
 
-function show_post_preview($counts) {
+function show_post_preview($counts, $card_styles = 'height:200px') {
 
 
     $att_id = get_post_thumbnail_id( get_the_ID() );
@@ -33,10 +33,10 @@ if (!$image_url){
 require('posts_card.php');
 
 }
-function no_posts() {
+function no_posts($card_styles = 'height:200px') {
 //    status_header(404);
     ?>
-    <div class="alert alert-danger px-1" style="height:250px;">
+    <div class="alert alert-danger px-1" style="<?php echo $card_styles ?>;">
         <div class="container-fluid p-0 m-0">
             <div class="flex text-sm-center">
                 <div>

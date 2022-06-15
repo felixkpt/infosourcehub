@@ -2,6 +2,7 @@
 $title = get_the_title();
 $description = get_the_excerpt();
 require_once 'header.php';
+require_once 'recommended.php';
 ?>
 <div id="ttr_header" class="row text-danger">
     <div class="ps-2">
@@ -25,6 +26,9 @@ require_once 'header.php';
                         </p>
     </div>
     <?php echo get_sidebar(); ?>
+
+    <?php echo recommended() ?>
+    
 </div>
 
 <?php echo get_footer(); ?>
