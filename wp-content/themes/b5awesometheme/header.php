@@ -69,4 +69,4 @@
 </nav>
 
 <main>
-    <div class="container-fluid px-3">
+    <div class="container-fluid px-4">
