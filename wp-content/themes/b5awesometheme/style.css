@@ -297,4 +297,10 @@ ul li a:focus+.sub-menu,
     background-color: #fff;
     padding: 5px 10px;
     white-space: nowrap;
+    transition: transform .5s ease-in-out;
+}
+
+
+.cat-divider:hover {
+    transform: scaleX(1.005);
 }

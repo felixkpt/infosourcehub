@@ -4,7 +4,7 @@ include_once 'page-posts.php';
 function home_cats()
 {
 
-    $categories = get_categories();
+    $categories = array_slice(get_categories(), 0, 4);
     foreach ($categories as $category) : ?>
         <div class="col-12">
             <div class="cat-divider-wrapper">
