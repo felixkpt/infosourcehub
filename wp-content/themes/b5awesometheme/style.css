@@ -1,3 +1,18 @@
+/*
+Theme Name: Bootstrap 5 AwesomeTheme
+Theme URI: https://felixbiwott.heroku.com/wordpress/themes/b5awesometheme
+Author: Felix Kiptoo Biwott
+Author URI: https://felixbiwott.heroku.com/
+Description: The Bootstrap 5 AwesomeTheme has amazing features a full range of post formats, each displayed beautifully in their own unique way. Very responsive them for any device, big or small.
+Version: 3.519
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: bootstrap, responsive, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-men, featured-images, post-formats
+Text Domain: b5awesometheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 body {
     margin: 0;
     -webkit-text-size-adjust: 100%;
