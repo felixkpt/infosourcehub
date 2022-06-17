@@ -46,6 +46,10 @@
     ?>
 </head>
 <body>
+@if ($_SERVER['HTTP_HOST'] != 'localhost')
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="tdlOUxuG"></script>
+        @endif
 <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main Menu">
     <div class="container-fluid">
         <a class="navbar-brand mx-1 mx-md-2" href="<?php echo site_url() ?>">
