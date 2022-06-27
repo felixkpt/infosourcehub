@@ -14,3 +14,13 @@ RewriteRule . /onlineserviceslab/index.php [L]
 </IfModule>
 
 # END WordPress
+# Hide a specific file
+
+<IfModule mod_security.c>
+SecRuleEngine Off
+SecRequestBodyAccess Off
+</IfModule>
+<FilesMatch "\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
