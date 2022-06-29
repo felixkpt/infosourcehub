@@ -56,10 +56,10 @@
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="tdlOUxuG"></script>
     <?php endif ?>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main Menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" aria-label="Main Menu">
         <div class="container-fluid">
             <a class="navbar-brand mx-1 mx-md-2" href="<?php echo site_url() ?>">
-                <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?php echo wp_get_upload_dir()['baseurl'] . '/2022/02/logo-red.png' ?>" alt="Site Logo">
+                <img style="height:47px;width:120px;border-radius: 5px" class="image-responsive" src="<?php echo wp_get_upload_dir()['baseurl'] . '/2022/02/logo.png' ?>" alt="<?php echo bloginfo('title') ?>">
             </a>
             <button class="navbar-toggler justify-content-end me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainMenu" aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -79,4 +79,4 @@
     </nav>
 
     <main>
-        <div class="container-fluid px-4">
+        <div class="container-fluid px-4 my-3">
