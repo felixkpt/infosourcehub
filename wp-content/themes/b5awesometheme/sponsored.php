@@ -7,34 +7,34 @@
         <?php
         $sponsored = [
             [
-                'title' => 'The Morning',
-                'content' => 'David Leonhardt looks at the hot-button issues next on the Supreme Court docket, starting with affirmative action.',
-                'image' => 'http://localhost/infosourcehub/wp-content/uploads/2022/06/KDU20B3BIK.jpg',
-                'link' => 'http://localhost/infosourcehub/index.php/2022/06/09/after-deposing-longtime-aide-trumps-effort-to-remain-out-of-contempt-has-been-met-with-dissatisfaction-by-the-new-york-attorney-general/'
+                'title' => 'Review of State Farm Car Insurance in 2022',
+                'content' => 'It\'s critical to inquire about vehicle insurance savings while looking for coverage',
+                'image' => 'https://legalpremiums.com/public/uploads/2022/06/BIxmwvREREJeTEaIap0U8aV0M5c3guWdCUIdqThi.png',
+                'link' => 'https://legalpremiums.com/companies/state-farm-car-insurance'
             ],
             [
-                'title' => 'The Morning',
-                'content' => 'A megachurch leader from La Luz del Mundo has been sentenced to prison for child sex assault',
+                'title' => 'Keir Starmer’s injunction',
+                'content' => 'Keir Starmer’s injunction not to join train employees on the picket line is defied by two Labour frontbenchers',
                 'image' => 'http://localhost/infosourcehub/wp-content/uploads/2022/06/ftyfu9ff5v87t6.jpg',
-                'link' => 'http://localhost/infosourcehub/index.php/2022/06/09/after-deposing-longtime-aide-trumps-effort-to-remain-out-of-contempt-has-been-met-with-dissatisfaction-by-the-new-york-attorney-general/'
+                'link' => 'http://www.infosourcehub.com/keir-starmers-injunction-not-to-join-train-employees-on-the-picket-line-is-defied-by-two-labour-frontbenchers/'
             ],
             [
-                'title' => 'The Morning',
-                'content' => 'David Leonhardt looks at the hot-button issues next on the Supreme Court docket, starting with affirmative action.',
-                'image' => 'http://localhost/infosourcehub/wp-content/uploads/2022/06/La-Luz-del-Mundo.jpg',
-                'link' => 'http://localhost/infosourcehub/index.php/2022/06/09/after-deposing-longtime-aide-trumps-effort-to-remain-out-of-contempt-has-been-met-with-dissatisfaction-by-the-new-york-attorney-general/'
+                'title' => 'Kanye West makes a surprise appearance',
+                'content' => 'The creator of SKIMS has moved on with former Saturday Night Live comic Pete Davidson',
+                'image' => 'https://celebritiesnation.com/public/uploads/2022/06/E42NFT0jMM8VIK5ykS95LYmvs2Q1AwobXfJUwufE.jpg',
+                'link' => 'https://celebritiesnation.com/posts/kanye-west-makes-a-surprise-appearance-at-the-bet-awards-and-mentions-the-kim-kardashian-divorce'
             ],
             [
-                'title' => 'The Morning',
-                'content' => 'David Leonhardt looks at the hot-button issues next on the Supreme Court docket, starting with affirmative action.',
-                'image' => 'http://localhost/infosourcehub/wp-content/uploads/2022/06/ftyfu9ff5v87t6.jpg',
-                'link' => 'http://localhost/infosourcehub/index.php/2022/06/09/after-deposing-longtime-aide-trumps-effort-to-remain-out-of-contempt-has-been-met-with-dissatisfaction-by-the-new-york-attorney-general/'
+                'title' => 'MassMutual Life Insurance',
+                'content' => 'MassMutual is situated in Springfield, Massachusetts, and was founded in 1851',
+                'image' => 'https://legalpremiums.com/public/uploads/2022/06/qtLeS1jgH07fWTIQT3YDi0ldvTlLNeDAUlYMOhuw.jpg',
+                'link' => 'https://legalpremiums.com/companies/massmutual-life-insurance'
             ]
         ]
         ?>
         <div class="d-flex gap-2 overflow-auto">
             <?php foreach ($sponsored as $item) : ?>
-                <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <div class="col-12 col-sm-6 col-md-5 col-lg-4 shadow p-1">
                     <div class="row">
                         <div class="col-7">
                             <a class="link-primary" href="<?php echo $item['link'] ?>" target="_blank">
