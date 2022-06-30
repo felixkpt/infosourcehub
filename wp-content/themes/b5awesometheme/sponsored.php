@@ -27,8 +27,8 @@
             [
                 'title' => 'Keir Starmer’s injunction',
                 'content' => 'Keir Starmer’s injunction not to join train employees on the picket line is defied by two Labour frontbenchers',
-                'image' => 'http://www.infosourcehub.com/wp-content/uploads/2022/06/GFHBNPOIHGFTH32KL.jpg?v=sessd',
-                'link' => 'http://www.infosourcehub.com/keir-starmers-injunction-not-to-join-train-employees-on-the-picket-line-is-defied-by-two-labour-frontbenchers/'
+                'image' => 'https://infosourcehub.com/wp-content/uploads/2022/06/GFHBNPOIHGFTH32KL.jpg?v=sessd',
+                'link' => 'https://infosourcehub.com/keir-starmers-injunction-not-to-join-train-employees-on-the-picket-line-is-defied-by-two-labour-frontbenchers/'
             ],
 
         ]
