@@ -475,8 +475,8 @@ ul li a:focus+.sub-menu,
     object-position: center;
     height: 100%;
     width: 100%;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
 }
 .size-post-thumbnail {
     width: 100%;
