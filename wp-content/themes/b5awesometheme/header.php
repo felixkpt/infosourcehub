@@ -8,6 +8,7 @@
     <title><?php echo $title ?></title>
     <meta name="description" content="<?php echo $description ?>">
     <script type="text/javascript" src="<?php echo get_theme_root_uri() . '/b5awesometheme/js/bootstrap.min.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo get_theme_root_uri() . '/b5awesometheme/js/carousel.js' ?>"></script>
     <link rel="stylesheet" href="<?php echo get_theme_root_uri() . '/b5awesometheme/css/bootstrap.css' ?>">
     <link rel="stylesheet" href="<?php echo get_theme_root_uri() . '/b5awesometheme/css/font-awesome/css/fontawesome-all.css' ?>">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_url') . '?v=' . date('H:i:s') ?>">
@@ -77,6 +78,5 @@
             </div>
         </div>
     </nav>
-
     <main>
         <div class="container-fluid px-4 my-3">

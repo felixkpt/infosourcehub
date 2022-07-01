@@ -27,14 +27,17 @@
                         }
                 ?>
                         <a class="link-secondary" href="<?php the_permalink() ?>">
-                            <div class="image-wrapper-md">
-                                <?php if (has_post_thumbnail()) {
-                                    the_post_thumbnail();
-                                } else { ?>
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/default-featured-images.jpg" alt="<?php the_title(); ?>" />
-                                <?php } ?>
+                            <div class="col-sm-9 col-md-12 mx-auto">
+                                <?php
+                                $image_url = get_bloginfo('template_directory') . '/images/default-featured-images.jpg';
+                                if (has_post_thumbnail()) {
+                                    $id = get_post_thumbnail_id($post->ID);
+                                    $orig = wp_get_attachment_image_src($id);
+                                    $image_url = $orig[0];
+                                } ?>
+                                <img src="<?php echo $image_url ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="<?php the_title(); ?>" />
                             </div>
-                            <h4><?php the_title(); ?></h4>
+                            <h5><?php the_title(); ?></h5>
                             <p><?php echo wp_trim_words(the_excerpt_embed(), 20, '...'); ?></p>
                         </a>
                         <hr>
@@ -57,11 +60,13 @@
                     ?>
                             <div class="col-6">
                                 <a class="link-secondary" href="<?php the_permalink() ?>">
-                                    <div class="image-wrapper-sm">
+                                    <div class="col-sm-8 col-md-10 mx-auto">
                                         <?php if (has_post_thumbnail()) {
-                                            the_post_thumbnail();
+                                        ?>
+                                            <img width="110" height="80" src="<?php echo the_post_thumbnail_url() ?>" alt="">
+                                        <?php
                                         } else { ?>
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/default-featured-images.jpg" alt="<?php the_title(); ?>" />
+                                            <img width="110" height="80" src="<?php bloginfo('template_directory'); ?>/images/default-featured-images.jpg" alt="<?php the_title(); ?>" />
                                         <?php } ?>
                                     </div>
                                     <h6><?php the_title(); ?></h6>
