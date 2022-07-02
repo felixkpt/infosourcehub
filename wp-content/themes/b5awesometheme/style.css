@@ -124,7 +124,7 @@ ul.primary-menu {
     padding-left: 0;
 }
 
-li {
+.primary-menu li {
     color: var(--bs-gray-700);
     display: block;
     float: left;
