@@ -162,6 +162,9 @@ h6 a {
 }
 
 /*Style for sub menu links*/
+ul.sub-menu {
+    width: 100%;
+}
 ul.sub-menu>li a {
     display: block;
     text-align: left;
@@ -481,4 +484,5 @@ ul li a:focus+.sub-menu,
 .size-post-thumbnail {
     width: 100%;
     height: auto;
+    max-height: 400px;
 }

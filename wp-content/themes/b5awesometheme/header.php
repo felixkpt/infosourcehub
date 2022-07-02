@@ -24,7 +24,7 @@
             }
             gtag('js', new Date());
 
-            gtag('config', 'G-D8SR0SRC3Z');
+            gtag('config', 'G-TW0XE13E2C');
         </script>
     <?php endif; ?>
     <?php
@@ -51,7 +51,6 @@
     endif;
     ?>
 </head>
-
 <body>
     <?php if ($_SERVER['HTTP_HOST'] != 'localhost') : ?>
         <div id="fb-root"></div>

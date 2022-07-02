@@ -27,7 +27,7 @@
                         }
                 ?>
                         <a class="link-secondary" href="<?php the_permalink() ?>">
-                            <div class="col-sm-9 col-md-12 mx-auto">
+                            <div class="col-sm-8 col-md-12 mx-auto">
                                 <?php
                                 $image_url = get_bloginfo('template_directory') . '/images/default-featured-images.jpg';
                                 if (has_post_thumbnail()) {
@@ -35,7 +35,7 @@
                                     $orig = wp_get_attachment_image_src($id);
                                     $image_url = $orig[0];
                                 } ?>
-                                <img src="<?php echo $image_url ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="<?php the_title(); ?>" />
+                                <img width="275" height="183" src="<?php echo $image_url ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="<?php the_title(); ?>" />
                             </div>
                             <h5><?php the_title(); ?></h5>
                             <p><?php echo wp_trim_words(the_excerpt_embed(), 20, '...'); ?></p>
