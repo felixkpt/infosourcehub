@@ -114,124 +114,57 @@ h6 a {
 }
 
 /*Start Nav css*/
-/*Strip the ul of padding and list styling*/
-.primary-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-/*Create a horizontal list with spacing*/
-.primary-menu li {
-    display: inline-block;
-    position: relative;
-
-}
-
-/*Style for top level links*/
-.primary-menu>ul>li>a {
-
-    display: block;
-    position: relative;
-    padding: 10px 8px;
-    font-weight: bold;
-    text-transform: uppercase;
-    overflow: hidden;
-    color: #333;
-    text-decoration: none;
-
-}
-
-
-.primary-menu ul li a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    transition: all .4s ease-in-out;
-    border-bottom: solid 2px transparent;
-}
-
-
-.primary-menu>ul>li>a:hover::before {
-    color: #35dc8d;
-    width: 100%;
-    border-bottom: solid 2px #333;
-}
-
-/*Style for sub menu links*/
-ul.sub-menu {
-    width: 100%;
-}
-ul.sub-menu>li a {
-    display: block;
-    text-align: left;
-    color: #fff;
-    background: #2f3036;
-    text-decoration: none;
-    padding: 5px;
-}
-
-
-/*Hide dropdown links until they are needed*/
-li.menu-item-has-children ul {
-    display: none;
-}
-
-/*Make dropdown links vertical*/
-li.menu-item-has-children ul li {
-    display: block;
-}
-
-li.menu-item-has-children ul {
-    width: 25%;
-}
-
-/*Prevent text wrapping*/
-li.menu-item-has-children ul li a {
-    white-space: nowrap;
-    border-radius: 0;
-}
-
-/*Style for dropdown links*/
 .primary-menu li.menu-item-has-children>a::after {
     content: ' ▼';
 }
-
-.primary-menu li.menu-item-has-children ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
+ul.primary-menu {
+    /* float: right; */
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
-/*Hover state for dropdown links*/
-li.menu-item-has-children ul a:hover,
-li.menu-item-has-children ul a:focus {
-    background: #19c589;
-    color: #fff;
-}
-
-li.menu-item-has-children ul li a:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-}
-
-li.menu-item-has-children ul li a:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
-/*Display the dropdown on hover*/
-ul li a:hover+.sub-menu,
-ul li a:focus+.sub-menu,
-.sub-menu:hover,
-.sub-menu:focus {
-    position: absolute;
+li {
+    color: var(--bs-gray-700);
     display: block;
-    z-index: 1000;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: var(--bs-gray-700);
+}
+
+li:hover {
+    background: var(--bs-gray-200);
+    cursor: pointer;
+}
+
+ul li ul {
+    background: var(--bs-gray-300);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 19rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    right: 0;
+    display: none;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
 }
 
 /*Responsive Styles*/
