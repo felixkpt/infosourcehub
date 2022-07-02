@@ -114,81 +114,109 @@ h6 a {
 }
 
 /*Start Nav css*/
-.primary-menu li.menu-item-has-children>a::after {
-    content: ' ▼';
-}
-ul.primary-menu {
-    /* float: right; */
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
+.primary-menu>ul {
+    list-style: none inside;
+    padding: 0;
+    color: var(--bs-gray-200);
+    /* text-align: center; */
 }
 
-.primary-menu li {
-    color: var(--bs-gray-700);
+.primary-menu>ul li {
+    transition: background .51s cubic-bezier(0.19, 0.9, 0.49, 0.93);
     display: block;
-    float: left;
-    padding: 1rem;
     position: relative;
-    text-decoration: none;
-    transition-duration: 0.5s;
+    float: left;
+    background: inherit;
+    width: 200px;
 }
 
-li a {
-    color: var(--bs-gray-700);
+.primary-menu>ul li a {
+    padding: 10px;
 }
 
-li:hover {
-    background: var(--bs-gray-200);
-    cursor: pointer;
-}
-
-ul li ul {
-    background: var(--bs-gray-300);
-    visibility: hidden;
-    opacity: 0;
-    min-width: 19rem;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    right: 0;
-    display: none;
-}
-
-ul li:hover>ul,
-ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
-
-ul li ul li {
-    clear: both;
-    width: 100%;
-}
-
-/*Responsive Styles*/
-@media screen and (max-width : 768px) {
-
-    /*Create vertical spacing*/
-    .primary-menu>ul>li {
-        margin-bottom: 1px;
+@media screen and (max-width: 768px) {
+    .primary-menu>ul {
+        flex-direction: column;
     }
 
-    li.menu-item-has-children ul {
-        width: 60%;
-        right: 0;
-        background: white;
-    }
-
-    /*Make all menu links full width*/
-    ul li,
-    li a {
+    .primary-menu>ul li {
         width: 100%;
     }
 
 }
 
+.primary-menu>ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--bs-gray-900);
+    font-weight: 600;
+}
+
+.primary-menu>ul li li a {
+    font-size: 90%;
+}
+
+
+.primary-menu>ul li:hover {
+    background: #28563ffc;
+}
+
+.primary-menu>ul li:hover a {
+    color: var(--bs-gray-100);
+}
+
+/* sub-menu bg-color */
+.primary-menu>ul li ul li {
+    transition: all .45s cubic-bezier(0.19, 0.9, 0.49, 0.93);
+    background: #749370;
+    min-width: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+    .primary-menu>ul li ul li {
+        width: 100%;
+    }
+}
+
+/* sub-menu bg-color hover */
+.primary-menu>ul li ul li:hover {
+    background: #81a77c;
+}
+
+.primary-menu>ul li.menu-item-has-children>ul {
+    position: absolute;
+    padding: 0;
+    left: auto;
+    display: none;
+}
+
+.primary-menu>ul li.menu-item-has-children>a::after {
+    position: absolute;
+    content: '';
+    margin: 2px;
+    right: 10%;
+    border-top: 10px solid var(--bs-gray-700);;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.primary-menu>ul li.menu-item-has-children>a:hover::after {
+    border-top: 10px solid var(--bs-gray-200);
+}
+.sub-menu-show {
+    display: block !important;
+}
+
+@media screen and (max-width: 768px) {
+    .primary-menu>ul ul {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .primary-menu>ul li:hover ul {
+        display: block;
+    }
+}
 /*End Nav css*/
 
 /* Heading */
