@@ -195,13 +195,14 @@ h6 a {
     content: '';
     margin: 2px;
     right: 10%;
-    border-top: 10px solid var(--bs-gray-700);;
+    border-top: 10px solid var(--bs-gray-700);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
-.primary-menu>ul li.menu-item-has-children>a:hover::after {
-    border-top: 10px solid var(--bs-gray-200);
+.primary-menu>ul li:hover a::after {
+    border-top-color: var(--bs-gray-200);
 }
+
 .sub-menu-show {
     display: block !important;
 }
