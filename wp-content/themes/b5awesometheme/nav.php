@@ -47,7 +47,7 @@
             })
         } else {
             dropdowns.forEach(node => {
-                // click open menu on smaller device
+                // remove event listener on larger device
                 node.removeEventListener('click', theToggler)
             })
         }
