@@ -8,10 +8,10 @@
     <title><?php echo $title ?></title>
     <meta name="description" content="<?php echo $description ?>">
     <script type="text/javascript" src="<?php echo get_theme_root_uri() . '/b5awesometheme/js/bootstrap.min.js' ?>"></script>
-    <script type="text/javascript" src="<?php echo get_theme_root_uri() . '/b5awesometheme/js/carousel.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo get_theme_root_uri() . '/b5awesometheme/js/carousel.js?v=sd6ydg' ?>"></script>
     <link rel="stylesheet" href="<?php echo get_theme_root_uri() . '/b5awesometheme/css/bootstrap.css' ?>">
     <link rel="stylesheet" href="<?php echo get_theme_root_uri() . '/b5awesometheme/css/font-awesome/css/fontawesome-all.css' ?>">
-    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_url') . '?v=' . date('H:i:s') ?>">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_url') . '?v=sd6ydg' ?>">
     <?php echo wp_head(); ?>
     <?php if ($_SERVER['HTTP_HOST'] != 'localhost' && !current_user_can('manage_options')) : ?>
         <!-- Global site tag (gtag.js) - Google Analytics -->
