@@ -1,4 +1,4 @@
-<div class="col-12 col-lg-3 pt-2 pt-lg-0 r-sidebar">
+<div class="col-12 col-lg-3 pt-2 pt-lg-0 r-sidebar overflow-hidden">
     <div class="row ms-lg-1 inner">
         <div class="col-12">
             <h3>Trending</h3>

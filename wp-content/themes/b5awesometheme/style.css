@@ -127,7 +127,7 @@ h6 a {
     position: relative;
     float: left;
     background: inherit;
-    width: 200px;
+    width: 150px;
 }
 
 .primary-menu>ul li a {
@@ -193,7 +193,7 @@ h6 a {
 .primary-menu>ul li.menu-item-has-children>a::after {
     position: absolute;
     content: '';
-    margin: 2px;
+    top: .9rem;
     right: 10%;
     border-top: 10px solid var(--bs-gray-700);
     border-left: 10px solid transparent;

@@ -23,28 +23,45 @@
     let deviceWidth = document.querySelector('body').offsetWidth
     window.addEventListener("resize", e => {
         deviceWidth = document.querySelector('body').offsetWidth
+        navHoverToggle()
     });
 
-    dropdowns()
 
-    function dropdowns() {
-        const dropdowns = document.querySelectorAll('.primary-menu>ul>li.menu-item-has-children').forEach(node => {
-            node.addEventListener('mouseenter', () => {
-                if (node.querySelector('ul')) {
-                    positionDrodown(node)
-                }
-            })
-            // click open menu on smaller device
-            if (deviceWidth < 768) {
-                console.log(4)
-                node.addEventListener('click', () => {
-                    if (node.querySelector('ul')) {
-                        console.log(5)
-                        node.querySelector('ul').classList.toggle('sub-menu-how')
-                    }
-                })
+    const dropdowns = document.querySelectorAll('.primary-menu>ul>li.menu-item-has-children')
+    dropdowns.forEach(node => {
+        node.addEventListener('mouseenter', () => {
+            if (node.querySelector('ul')) {
+                positionDrodown(node)
             }
         })
+
+    })
+
+    navHoverToggle()
+
+    function navHoverToggle() {
+        if (deviceWidth < 768) {
+            dropdowns.forEach(node => {
+                // click open menu on smaller device
+                node.addEventListener('click', () => theToggler(node))
+            })
+        } else {
+            dropdowns.forEach(node => {
+                // click open menu on smaller device
+                node.removeEventListener('click', theToggler)
+            })
+        }
+    }
+
+    function theToggler(node, close = null) {
+        if (node.querySelector('ul')) {
+            // console.log('inside', node ,deviceWidth)
+            if (!close) {
+                node.querySelector('ul').classList.toggle('sub-menu-show')
+            } else {
+                node.querySelector('ul').classList.remove('sub-menu-show')
+            }
+        }
     }
 
     function positionDrodown(node) {
@@ -57,4 +74,14 @@
             dropdown.style.right = '0'
         }
     }
+
+    // Remove all opened sub-menu on click outside
+    document.querySelector('body').addEventListener('click', (e) => {
+        const isSelf = e.target.closest('.primary-menu')
+        if (!isSelf) {
+            dropdowns.forEach(node => {
+                theToggler(node, true)
+            })
+        }
+    })
 </script>
