@@ -20,10 +20,9 @@
     </div>
 </nav>
 <script>
-    let deviceWidth = document.querySelector('body').offsetWidth
+    const deviceWidth = (val) => val || document.querySelector('body').offsetWidth
     window.addEventListener("resize", e => {
-        deviceWidth = document.querySelector('body').offsetWidth
-        navHoverToggle()
+        deviceWidth(document.querySelector('body').offsetWidth)
     });
 
     const dropdowns = document.querySelectorAll('.primary-menu>ul>li.menu-item-has-children')
@@ -39,24 +38,19 @@
     navHoverToggle()
 
     function navHoverToggle() {
-        if (deviceWidth < 768) {
-            dropdowns.forEach(node => {
-                // click open menu on smaller device
-                node.addEventListener('click', () => theToggler(node))
-            })
-        } else {
-            dropdowns.forEach(node => {
-                // remove event listener on larger device
-                node.removeEventListener('click', theToggler)
-            })
-        }
+        dropdowns.forEach(node => {
+            // click open menu on smaller device
+            node.addEventListener('click', () => theToggler(node))
+        })
     }
 
     function theToggler(node, close = null) {
         if (node.querySelector('ul')) {
-            // console.log('inside', node ,deviceWidth)
             if (!close) {
-                node.querySelector('ul').classList.toggle('sub-menu-show')
+                if (deviceWidth() < 768) {
+                    // console.log('Togglin..')
+                    node.querySelector('ul').classList.toggle('sub-menu-show')
+                }
             } else {
                 node.querySelector('ul').classList.remove('sub-menu-show')
             }
@@ -65,7 +59,7 @@
 
     function positionDrodown(node) {
         const left = node.offsetLeft
-        const right = deviceWidth - left
+        const right = deviceWidth() - left
         const dropdown = node.querySelector('ul')
         const dropdownWidth = dropdown.clientWidth
         if (dropdownWidth > right && left > right) {

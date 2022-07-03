@@ -24,7 +24,7 @@ function carousel(target, itemWidth = 0, scrollBy = 0) {
 
     prev.addEventListener("click", e => {
         carouselSlide.scrollBy(-(scrollBy), 0);
-        if (carouselSlide.scrollLeft - width - scrollBy <= 0) {
+        if (carouselSlide.scrollLeft - scrollBy <= 0 ) {
             prev.style.display = "none";
         }
         if (!content.scrollWidth - width - scrollBy <= carouselSlide.scrollLeft + width) {
