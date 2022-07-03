@@ -26,7 +26,6 @@
         navHoverToggle()
     });
 
-
     const dropdowns = document.querySelectorAll('.primary-menu>ul>li.menu-item-has-children')
     dropdowns.forEach(node => {
         node.addEventListener('mouseenter', () => {
