@@ -14,7 +14,7 @@ require_once 'header.php';
         ?>
 
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 m-100">
                     <div class="float-sm-start col-md-6">
                         <?php
                         $cts = 0;
