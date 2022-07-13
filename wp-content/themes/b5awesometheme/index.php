@@ -68,7 +68,7 @@ require_once 'header.php';
                         }
                     ?>
                         <div class="float-lg-start col-md-6">
-                            <h4><a class="link-primary" href="#!"><?php the_title(); ?></a></h4>
+                            <h4><a class="link-primary" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
                             <p><?php echo wp_trim_words(the_excerpt_embed(), 20, '...'); ?></p>
                         </div>
                     <?php
