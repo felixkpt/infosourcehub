@@ -25,7 +25,7 @@
             }
             gtag('js', new Date());
 
-            gtag('config', 'G-TW0XE13E2C');
+            gtag('config', 'G-D8SR0SRC3Z');
         </script>
     <?php endif; ?>
     <?php
